@@ -1,0 +1,62 @@
+.header__nav {
+    display: flex;
+    overflow: hidden;
+}
+
+.header__logo {
+    padding: 20px;
+    display: flex;
+    flex: 1;
+    position: relative;
+    cursor: pointer;
+}
+
+.header__logo-overlay {
+    position: absolute;
+    width: 100%;
+    background-color: var(--primary-color);
+    inset: 0;
+    z-index: -1;
+}
+
+.header__logo h4 {
+    padding-left: 30px;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: --playfair-display;
+    color:white;
+    opacity: 0.9;
+    text-transform: uppercase;
+}
+
+.header__menu, .header__menu-mobile {
+    list-style: none;
+    padding: 20px;
+    flex: 1.236;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 64px;
+    cursor: pointer;
+}
+
+.header__menu li {
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--secondary-color);
+    font-size:16px ;
+    line-height: 20px;
+    font-family: (--plus-jakarta-sans);
+}
+
+.header__menu li img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.header__menu-mobile {
+    display: none;
+    gap: 20px;
+    position: relative;
+}
